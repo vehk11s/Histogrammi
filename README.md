@@ -1,5 +1,4 @@
 # Histogrammi
-Ohjelmointitesti C++
 
 Tehtävänanto: 
 
@@ -14,4 +13,3 @@ HistogramBase tarvitsee toimiakseen osoittimen Logger-luokan olioon. Logger-luok
 Luokan testaamista varten toteuta luokalle RandomEintegerGeneratorBase aliluokka RandomEintegerGenerator, joka luo EInteger-
 tyyppisiä arvoja. Arvojen satunnaisuuden laadulla ei ole tässä suurta merkitystä. Anna aliluokan esittely ja toteutus tiedostoissa RandomEintegerGenerator.h ja RandomEintegerGenerator.cpp.
 
-Liitä kooditiedostojen sisältö alla olevaan tekstikenttään tai palauta GitHub repositoryn URL.
