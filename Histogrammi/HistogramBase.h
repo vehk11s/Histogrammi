@@ -92,7 +92,7 @@ namespace Hist
     virtual EInteger getMaxValue() const = 0;
 
 
-  //Since this is baseclass, we change this to protected, so ve can use it in devired class
+  //Since this is baseclass, we change this to protected, so ve can use it in derived class
   //private:
   protected:
     std::unique_ptr<Logger> m_log;

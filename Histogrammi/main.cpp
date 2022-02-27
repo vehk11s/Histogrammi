@@ -14,7 +14,7 @@ int main()
   //pointer to Logger object
   std::unique_ptr<Logger> p = std::make_unique<Logger>();
 
-  //make our Histogram hist
+  //make our Histogram hist and move unique pointer p to it
   Hist::Histogram hist(std::move(p));
 
   //our random Einteger generator for testdata
