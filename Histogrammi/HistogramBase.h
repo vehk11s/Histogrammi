@@ -65,7 +65,7 @@ namespace Hist
 
     HistogramBase(const HistogramBase&) {};
 
-    HistogramBase(HistogramBase&&) {};
+    HistogramBase(HistogramBase&&) noexcept{};
     
     virtual ~HistogramBase() {};
 

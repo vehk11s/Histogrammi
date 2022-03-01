@@ -28,10 +28,21 @@ namespace Hist{
     //delete copy constructor because we can't copy unique_pointer without destroying it
     Histogram(Histogram&) = delete;
 
-    
+    //Move constructor
+    Histogram(Histogram&& other) noexcept:
+      m_MaxValue(other.m_MaxValue),
+      m_MinValue(other.m_MinValue),
+      m_MostFrequency(std::move(other.m_MostFrequency)) 
+    {
+      this->m_log = std::move(other.m_log);
+      
+      //reset other Histogram values to default
+      other.m_MaxValue = 0;
+      other.m_MinValue = INT_MAX;
+    };
 
     //since we need ponter to Logger object for this to work
-    Histogram(std::unique_ptr<Logger> p){
+    Histogram(std::unique_ptr<Logger> p) {
       this->m_log = std::move(p);
     };
    
