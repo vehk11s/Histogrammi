@@ -24,7 +24,12 @@ namespace Hist{
     
     //delete default constructor
     Histogram() = delete;
+
+    //delete copy constructor because we can't copy unique_pointer without destroying it
+    Histogram(Histogram&) = delete;
+
     
+
     //since we need ponter to Logger object for this to work
     Histogram(std::unique_ptr<Logger> p){
       this->m_log = std::move(p);
