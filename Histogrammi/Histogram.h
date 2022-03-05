@@ -115,6 +115,7 @@ namespace Hist{
     //if we need to update our min and max values manually
     //we have to iterate whole unordered_map to get the correct values.
     //usually we update our values while adding new ones to histogram
+    //if we want to use these functions outside of class, we have to change these from private to public
     void updateMaxValue(){
       int maxSoFar = 0;
 
@@ -138,6 +139,7 @@ namespace Hist{
 
     //if we have to manually update highest frequency. Usually we check this while we add new values to histogram
     //find key that has most frequency from dataset
+    //if we want to use this outside of class, we have to change this from private to public
     void updateMostFrequency(){
       std::pair<EInteger, int> mostFrequencySoFar;
       
