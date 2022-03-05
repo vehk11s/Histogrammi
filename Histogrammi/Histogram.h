@@ -12,8 +12,19 @@
 
 
 /*
-HistogramBase-luokan default constructor = delete esti kaikkien constructorien käyttämisen lapsiluokassa, joten poistettu constructori vasta lapsiluokassa.
-m_log oli private, joten siihen ei ollut pääsyä lapsiluokasta. Muokattu private -> protected
+* Histogram-luokka, perii HistogramBase-luokan
+* 
+* 
+*Todo:
+* Isoimpien funktioiden siirto histogram.cpp -tiedostoon
+* int getFrequencyOf(EIngeter param) -funktio. Ottaa paramterina EIntegerin, jonka esiintyvyys histogrammissa palautetaan int-muodossa, jos esiintyvyys on 0, palautetaan 0
+* void print(void) -funktio Histogrammin tulostamista varten, voidaan myös toteuttaa luokan ulkopuolelle. Jos toteutus luokan ulkopuolella, ottaa parametrina viittauksen histogrammiin.
+* 
+* 
+* Haasteita tehtävässä:
+* 
+* HistogramBase-luokan default constructor = delete esti kaikkien constructorien käyttämisen lapsiluokassa, joten poistettu constructori vasta lapsiluokassa.
+* m_log oli private, joten siihen ei ollut pääsyä lapsiluokasta. Muokattu private -> protected
 */
 
 

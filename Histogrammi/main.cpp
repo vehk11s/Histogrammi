@@ -25,7 +25,7 @@ int main()
     first.add(randomEInteger());
   }
   
-  //print basic data from histogram
+  //print basic data from first histogram
   std::cout << "Histogram first: max value: " << first.getMaxValue() << "\n";
   std::cout << "Histograms first: min value: " << first.getMinValue() << "\n";
   std::cout << "Value that first: has most occurence in Histogram: " << first.getMode() << "\n\n";
@@ -34,12 +34,12 @@ int main()
   //test our move constructor
   Hist::Histogram second(std::move(first));
 
-  //print basic data from histogram
+  //print data after move from first histogram
   std::cout << "Histograms first: max value: " << first.getMaxValue() << "\n";
   std::cout << "Histograms first: min value: " << first.getMinValue() << "\n";
   std::cout << "Value that first: has most occurence in Histogram: " << first.getMode() << "\n\n";
 
-  //print basic data from histogram
+  //print moved data from second histogram
   std::cout << "Histograms second: max value: " << second.getMaxValue() << "\n";
   std::cout << "Histograms second: min value: " << second.getMinValue() << "\n";
   std::cout << "Value that second: has most occurence in Histogram: " << second.getMode() << std::endl;
